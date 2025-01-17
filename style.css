@@ -109,7 +109,7 @@
     font-weight: 300;
     font-style: normal;
     font-size: medium;
-    margin-right: 50px;
+    margin-right: 25px;
     
 }
 .work{
@@ -138,7 +138,8 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: medium;
+    font-size: small;
+    white-space: nowrap;
 }
 #ts{
     font-size: small;
@@ -153,5 +154,22 @@
     font-weight: 300;
     font-style: normal;
     font-size: medium;
-    margin-left: 50px;
+    margin-left: 25px;
+}
+.awards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 0.1px solid rgb(144, 144, 144);
+
+}
+#wi{
+    width: 20px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 30px;
 }
