@@ -3,105 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Sevillana&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body onload="time()">
-    <div class="navbar">
-        <p>Playground</p>
-        <p>Services</p>
-        <p>Case studies</p>
-        <p>About me</p>
-        <div class="time">
-            <p id="place">Jakarta, Indonesia</p>
-           <b><p id="time"></p></b>
+
+    <!-- Navbar -->
+    <nav class="container d-flex justify-content-between align-items-center py-3">
+        <div class="d-flex gap-3">
+            <p class="m-0">Playground</p>
+            <p class="m-0">Services</p>
+            <p class="m-0">Case Studies</p>
+            <p class="m-0">About Me</p>
+        </div>
+        <div class="text-end">
+            <p class="text-secondary m-0">Jakarta, Indonesia</p>
+            <b><p id="time" class="m-0"></p></b>
+        </div>
+    </nav>
+
+    <!-- Self Introduction -->
+    <div class="container d-flex flex-column flex-md-row align-items-center gap-4 my-5 d-flex justify-content-evenly">
+        <div class="text-center text-md-start">
+            <img src="buzz.jpeg" alt="Selfie" class="rounded-circle" width="60">
+            <h2 class="mt-3">Hello! I'm Nicholas Aviel</h2>
+        </div>
+        <div>
+            <p class="fw-semibold fs-4">A Website Designer based in Jakarta, Indonesia.</p>
+            <p class="text-secondary">Passionate about creating great experiences for digital products.</p>
+            <button class="btn btn-dark me-2">Talk with me</button>
+            <button class="btn btn-outline-secondary">See my work</button>
+        </div>
+        <div class="d-flex flex-column align-items-center gap-2">
+            <img src="instagram.png" alt="Instagram" class="border rounded-circle p-2" width="40">
+            <img src="dribbble.png" alt="Dribbble" class="border rounded-circle p-2" width="40">
+            <img src="twitter-alt.png" alt="Twitter" class="border rounded-circle p-2" width="40">
         </div>
     </div>
-    <div class="self_info">
-        <div class="self_info_first">
-            <img src="buzz.jpeg" alt="" id="selfie">
-            <p>Hello! I'm Nicholas Aviel</p>
-        </div>
-        <div class="self_info_second">
-            <p id="work">A Website designer based in Jakarta, Indonesia.</p>
-            <p id="side">Passionate creating greate experience for Digital Product</p>
-            <button id="talk">Talk with me</button>
-            <button id="see">See my work</button>
-        </div>
-        <div class="logo">
-            <div class="logo_1">
-                <img src="instagram.png" alt="" id="social">
-            </div>
-            <div class="logo_1">
-                <img src="dribbble.png" alt="" id="social">
-            </div>
-            <div class="logo_1">
-                <img src="twitter-alt.png" alt="" id="social">
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="work_award">
-            <div class="work_exp">
-                <p>Working experience</p>
-                <div class="work">
-                    
-                    <img src="uber.png" alt="" id="work_logo">
-                    <div class="workdesc_1">
-                        <p class="w1">Product design at <b>Uber</b></p>
-                        <p class="w1" id="ts">February 2018 - February 2020</p>
+
+    <!-- Work Experience & Awards -->
+    <div class="container bg-light py-5 rounded-4">
+        <div class="row px-5">
+                
+            <!-- Work Experience -->
+            <div class="col-md-6">
+                <h4>Working Experience</h4>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="uber.png" alt="Uber Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Product Designer at <b>Uber</b></p>
+                        <p class="text-secondary m-0">Feb 2018 - Feb 2020</p>
                     </div>
                 </div>
-                <div class="work">
-                    
-                    <img src="amazon.png" alt="" id="work_logo">
-                    <div class="workdesc_2">
-                        <p class="w1">Senior Product design at <b>Gojek</b></p>
-                        <p class="w1" id="ts">February 2020 - February 2023</p>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="amazon.png" alt="Amazon Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Senior Product Designer at <b>Gojek</b></p>
+                        <p class="text-secondary m-0">Feb 2020 - Feb 2023</p>
                     </div>
                 </div>
-                <div class="work">
-                    
-                    <img src="google.png" alt="" id="work_logo">
-                    
-                    <div class="workdesc_3">
-                        <p class="w1">Part time Product design at <b>Google</b></p>
-                        <p class="w1" id="ts">February 2020 - Present</p>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="google.png" alt="Google Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Part-time Product Designer at <b>Google</b></p>
+                        <p class="text-secondary m-0">Feb 2020 - Present</p>
                     </div>
                 </div>
             </div>
-            <div class="awards_recog">
-                <p>Awards & Recognition</p>
-                <div class="awards">
-                    <img src="figma.png" alt="" id="wi">
-                    <div class="awarddesc_1">
-                        <p class="w1">
-                            Website of the day at <b>Awwwards</b>
-                        </p>
-                        <p class="w1" id="ts">November 2023</p>
+
+            <!-- Awards & Recognition -->
+            <div class="col-md-6">
+                <h4>Awards & Recognition</h4>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="figma.png" alt="Figma Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Website of the Day at <b>Awwwards</b></p>
+                        <p class="text-secondary m-0">Nov 2023</p>
                     </div>
                 </div>
-                <div class="awards">
-                    <img src="netflix.png" alt="" id="wi">
-                    <div class="awarddesc_2">
-                        <p class="w1">Best visual design at <b>Webby Award</b></p>
-                        <p class="w1" id="ts">December 2035</p>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="netflix.png" alt="Netflix Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Best Visual Design at <b>Webby Award</b></p>
+                        <p class="text-secondary m-0">Dec 2035</p>
                     </div>
                 </div>
-                <div class="awards">
-                    <img src="figma.png" alt="" id="wi">
-                    <div class="awarddesc_3">
-                        <p class="w1" id="ts">Site of the day at <b>Awwwards</b></p>
-                        <p class="w1" id="ts">January 2051</p>
+                <div class="d-flex align-items-center border-bottom py-3">
+                    <img src="figma.png" alt="Figma Logo" class="bg-white p-2 rounded" width="40">
+                    <div class="ms-3">
+                        <p class="m-0">Site of the Day at <b>Awwwards</b></p>
+                        <p class="text-secondary m-0">Jan 2051</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Projects Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Experience with a variety of projects and industries.</h4>
+                <button class="btn btn-dark me-2">Talk with me</button>
+                <button class="btn btn-outline-secondary">See my work</button>
+            </div>
+            <div class="col-md-6">
+                <div class="row border-bottom">
+                    <div class="col border-end p-3 d-flex justify-content-center align-items-center"><img src="python.svg" alt="" class="bg-white p-2 rounded d-flex " width="50"></div>
+                    <div class="col border-end p-3"><p
+                        class="fs-3 fw-bold text-center">Python
+
+                    </p>
+                    <p class="text-center">Tk inter, OOP, Loop</p>
+
+                    </div>
+                    <div class="col border-end p-3 d-flex justify-content-center align-items-center"><img src="c++.svg" alt="" class="bg-white p-2 rounded d-flex ≈" width="50"></div>
+                    <div class="col p-3">1</div>
+                </div>
+                <div class="row">
+                    <div class="col border-end p-3">1</div>
+                    <div class="col border-end p-3 d-flex justify-content-center align-items-center"><img src="js.svg" alt="" class="bg-white p-2 rounded d-flex " width="50"></div>
+                    <div class="col border-end p-3">1</div>
+                    <div class="col border-end p-3 d-flex justify-content-center align-items-center"><img src="css.svg" alt="" class="bg-white p-2 rounded d-flex " width="50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
