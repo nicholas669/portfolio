@@ -6,4 +6,6 @@ function time(){
     const s = d.getSeconds();
     const amOrPm = h >= 12 ? 'PM' : 'AM';
     date.innerHTML = h + ':' + m + ':' + s + ' ' + amOrPm;
+
 }
+setInterval(time,1000);
