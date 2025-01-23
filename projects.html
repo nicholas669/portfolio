@@ -28,7 +28,7 @@
     <!-- Self Introduction -->
     <div class="container d-flex flex-column flex-md-row align-items-center gap-4 my-5 d-flex justify-content-evenly">
         <div class="text-center text-md-start">
-            <img src="buzz.jpeg" alt="Selfie" class="rounded-circle" width="60">
+            <img src="image/buzz.jpeg" alt="Selfie" class="rounded-circle" width="60">
             <h2 class="mt-3">Hello! I'm Nicholas Aviel</h2>
         </div>
         <div>
@@ -42,11 +42,50 @@
             <!-- ditambah hrefnya -->
         </div>
         <div class="d-flex flex-column align-items-center gap-2">
-            <img src="instagram.png" alt="Instagram" class="border rounded-circle p-2" width="40">
-            <img src="dribbble.png" alt="Dribbble" class="border rounded-circle p-2" width="40">
-            <img src="twitter-alt.png" alt="Twitter" class="border rounded-circle p-2" width="40">
+            <img src="image/instagram.png" alt="Instagram" class="border rounded-circle p-2" width="40">
+            <img src="image/dribbble.png" alt="Dribbble" class="border rounded-circle p-2" width="40">
+            <img src="image/twitter-alt.png" alt="Twitter" class="border rounded-circle p-2" width="40">
         </div>
     </div>
+
+    <!-- Projects -->
+    <div class="container bg-light py-5 rounded-4" id="contain">
+        <div class="row align-items-start">
+            <div class="col d-flex justify-content-center align-items-center flex-column">
+                <img src="" alt="" id="img1" class="p-2" width="200">
+                <p id="txt1" class=""></p>
+                
+            </div>
+            <div class="col d-flex justify-content-center align-items-center flex-column">
+                <img src="" alt="" id="img2" class="p-2" width="200">
+                <p id="txt2" class=""></p>
+            </div>
+          </div>
+    </div>
+
+    <nav aria-label="Page navigation example" class="py-5 align-middle d-flex justify-content-center">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous" onclick="move(0)">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(0)">1</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(1)">2</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(2)">3</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(3)">4</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(4)">5</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="page(5)">6</a></li>
+
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next" onclick="move(1)">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
