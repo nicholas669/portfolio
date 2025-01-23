@@ -40,19 +40,20 @@ function page(idx){
 }
 
 function move(a){
-    let p = localStorage.getItem("page")
-    if (a == 0){
-        p -= 1
+    let p = parseInt(localStorage.getItem("page"));
+    
+    if (a == 0) {
+        p -= 1;
         if (p < 0){
             p = 0
         }
-    }
-    if (a == 1){
-        p += 1
+    } else if (a == 1) {
+        p += 1;
         if (p > 5){
             p = 0
         }
     }
-    page(p)
+
+    page(p);
 }
 
