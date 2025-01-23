@@ -13,13 +13,23 @@ function time(){
 setInterval(time,1000);
 function button(){
     let but = document.getElementById("but")
+    let buts = document.getElementById("buts")
 
     but.addEventListener("mouseenter", function (){
         but.style.color = "gray";
+     
+    })
+    buts.addEventListener("mouseenter", function (){
+        buts.style.color = "gray";
     })
 
     but.addEventListener("mouseleave", function (){
         but.style.color = "black";
+    
+    })
+    buts.addEventListener("mouseleave", function (){
+
+        buts.style.color = "black";
     })
 }
 
